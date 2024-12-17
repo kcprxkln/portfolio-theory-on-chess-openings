@@ -1,3 +1,3 @@
 print("Hello world")
 
-print("Sraka")
+print("Gejus")
