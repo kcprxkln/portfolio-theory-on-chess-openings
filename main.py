@@ -1,5 +1,4 @@
 print("Hello world")
 
-print("Gejus")
 
-print("sram fiutem")
+print("kutas")
