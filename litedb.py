@@ -4,7 +4,7 @@ import re
 
 # Funkcja do tworzenia bazy danych i tabel
 def create_db():
-    conn = sqlite3.connect('./database/chess_games.db')  # Tworzenie/połączenie z bazą danych
+    conn = sqlite3.connect('/home/SQLite/database/chess_games.db')  # Tworzenie/połączenie z bazą danych
     cursor = conn.cursor()
     
     # Tworzenie tabeli "games"
@@ -40,7 +40,7 @@ def create_db():
 
 # Funkcja do wstawiania danych do tabeli "games" i "moves"
 def insert_game_data(event, site, round_num, date, white_person, black_person, white_elo, black_elo, result, moves):
-    conn = sqlite3.connect('./database/chess_games.db')  # Połączenie z bazą danych
+    conn = sqlite3.connect('/home/SQLite/database/chess_games.db')  # Połączenie z bazą danych
     cursor = conn.cursor()
 
     # Wstawianie danych do tabeli "games"
@@ -118,7 +118,7 @@ def process_all_pub_files(folder_path):
 create_db()
 
 # Folder, w którym znajdują się pliki .pgn
-folder_path = './chess_games'  # Folder z plikami .pgn
+folder_path = '/home/SQLite/chess_games'  # Folder z plikami .pgn
 
 # Przetwarzanie wszystkich plików .pgn w folderze
 process_all_pub_files(folder_path)
